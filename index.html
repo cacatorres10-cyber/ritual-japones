@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ritual Japonês Caseiro · Alívio Natural para Dores nas Juntas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F4EFE5; --paper-2:#EFE8DA; --paper-3:#E7DECC;
+    --ink:#211C16; --ink-soft:#544B3E;
+    --indigo:#21385E; --indigo-deep:#162840;
+    --vermilion:#B6402A; --vermilion-deep:#9a3221;
+    --sage:#5E6B4F;
+    --line:rgba(33,28,22,.14);
+    --serif:"Fraunces",Georgia,serif; --sans:"Hanken Grotesk",system-ui,sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:var(--sans);background:var(--paper);color:var(--ink);font-size:19px;line-height:1.72;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  .wrap{max-width:680px;margin:0 auto;padding:0 22px}
+  .wide{max-width:1060px;margin:0 auto;padding:0 22px}
+  section{padding:clamp(46px,8vw,84px) 0}
+  h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.13;letter-spacing:-.01em}
+  h1{font-size:clamp(31px,6.4vw,52px)}
+  h2{font-size:clamp(26px,4.6vw,38px);margin-bottom:.5em}
+  h3{font-size:21px;line-height:1.25}
+  p{margin-bottom:1em} p:last-child{margin-bottom:0}
+  strong{font-weight:700} em{font-style:italic}
+  .eyebrow{font-size:13px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--vermilion);margin-bottom:18px;display:inline-block}
+  .lead{font-size:clamp(18px,2.6vw,21px);color:var(--ink-soft)}
+
+  .cta{display:inline-block;background:var(--vermilion);color:#fff;text-decoration:none;font-weight:700;font-size:19px;padding:19px 34px;border-radius:999px;text-align:center;box-shadow:0 10px 26px -10px rgba(154,50,33,.65);transition:transform .15s,box-shadow .15s,background .15s;border:none;cursor:pointer;line-height:1.2}
+  .cta:hover{background:var(--vermilion-deep);transform:translateY(-2px);box-shadow:0 16px 30px -12px rgba(154,50,33,.7)}
+  .cta:focus-visible{outline:3px solid var(--indigo);outline-offset:3px}
+  .cta-note{margin-top:14px;font-size:14.5px;color:var(--ink-soft);font-weight:500}
+  .cta-note span{white-space:nowrap;margin:0 4px}
+
+  /* photo placeholder zones (swap for licensed/real photos) */
+  .photo{position:relative;border-radius:18px;overflow:hidden;background:
+      radial-gradient(120% 120% at 30% 20%, var(--paper-2), var(--paper-3));
+      border:1px solid var(--line);display:flex;align-items:center;justify-content:center;text-align:center}
+  .photo .ph-tag{font-size:13px;font-weight:600;letter-spacing:.04em;color:var(--ink-soft);padding:10px 16px;border:1px dashed rgba(33,28,22,.3);border-radius:999px;background:rgba(255,255,255,.45)}
+  .photo img{width:100%;height:100%;object-fit:cover;display:block}
+  .photo svg.bg{position:absolute;inset:0;width:100%;height:100%;opacity:.16;color:var(--sage)}
+
+  /* HERO */
+  .hero{padding-top:clamp(36px,6vw,58px)}
+  .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:44px;align-items:center}
+  .seal-mark{width:70px;height:70px;border-radius:50%;border:2px solid var(--vermilion);color:var(--vermilion);display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:12px;font-weight:600;letter-spacing:.05em;text-align:center;line-height:1.15;transform:rotate(-7deg);position:relative;margin-bottom:24px}
+  .seal-mark::after{content:"";position:absolute;inset:5px;border-radius:50%;border:1px solid rgba(182,64,42,.4)}
+  .kanji{font-size:21px;display:block;margin-bottom:1px}
+  .hero h1{margin-bottom:.55em}
+  .hero .lead{margin-bottom:30px}
+  .hero .photo{aspect-ratio:4/5}
+
+  /* INGREDIENT BAND */
+  .band{background:var(--paper-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .band .wide{display:flex;gap:18px;justify-content:center;flex-wrap:wrap;text-align:center}
+  .ing{flex:1;min-width:140px;max-width:200px}
+  .ing svg{width:54px;height:54px;color:var(--sage);margin-bottom:10px}
+  .ing b{display:block;font-family:var(--serif);font-size:18px;font-weight:600}
+  .ing span{font-size:14px;color:var(--ink-soft)}
+
+  /* PAIN */
+  .pain{background:var(--paper)}
+  .pain h2{max-width:560px}
+  .pain ul{list-style:none;margin:6px 0 0}
+  .pain li{position:relative;padding-left:30px;margin-bottom:14px;color:var(--ink-soft);font-size:18.5px}
+  .pain li::before{content:"";position:absolute;left:4px;top:11px;width:8px;height:8px;background:var(--vermilion);border-radius:50%;opacity:.55}
+  .pain .fear{margin-top:26px;font-family:var(--serif);font-size:clamp(20px,3vw,25px);font-style:italic;line-height:1.4;border-left:3px solid var(--vermilion);padding-left:20px}
+
+  /* CONDITIONS CHECKLIST */
+  .cond{background:var(--paper-2);text-align:center}
+  .cond h2{max-width:560px;margin:0 auto .35em}
+  .cond .sub{color:var(--ink-soft);margin-bottom:30px}
+  .cgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:11px;text-align:left;max-width:720px;margin:0 auto}
+  .cgrid div{display:flex;align-items:center;gap:10px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:13px 15px;font-weight:600;font-size:15.5px}
+  .cgrid div::before{content:"✓";flex-shrink:0;width:22px;height:22px;border-radius:50%;background:var(--vermilion);color:#fff;font-size:12px;font-weight:800;display:flex;align-items:center;justify-content:center}
+  .cpay{max-width:560px;margin:30px auto 0;font-size:18px}
+
+  /* 3 STEPS */
+  .steps{background:var(--paper)}
+  .steps .intro{text-align:center;margin-bottom:36px}
+  .sgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .step{background:#fff;border:1px solid var(--line);border-radius:16px;padding:26px 22px;text-align:center}
+  .step .si{width:58px;height:58px;border-radius:50%;background:var(--paper-2);display:flex;align-items:center;justify-content:center;font-size:26px;margin:0 auto 14px}
+  .step b{display:block;font-family:var(--serif);font-size:19px;margin-bottom:8px}
+  .step p{font-size:15.5px;color:var(--ink-soft);margin:0}
+
+  /* QUOTE */
+  .quote{background:var(--paper-2);text-align:center}
+  .quote blockquote{font-family:var(--serif);font-size:clamp(22px,3.5vw,30px);line-height:1.4;font-weight:500;max-width:620px;margin:0 auto 18px}
+  .quote .who{display:flex;gap:12px;align-items:center;justify-content:center}
+  .quote .stars{color:var(--vermilion);letter-spacing:3px;margin-bottom:16px;font-size:17px}
+
+  .avatar{width:48px;height:48px;border-radius:50%;background:var(--indigo);color:#fff;display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-weight:600;font-size:18px;flex-shrink:0;overflow:hidden}
+  .avatar img{width:100%;height:100%;object-fit:cover}
+  .by{font-size:14px;font-weight:600;color:var(--ink-soft);text-align:left;line-height:1.3}
+
+  .label{font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--sage);margin-bottom:14px}
+
+  /* split section image+text */
+  .split{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
+  .split .photo{aspect-ratio:4/3}
+
+  /* ===== MOCKUP (premium members area) ===== */
+  .mockup{position:relative;background:radial-gradient(120% 90% at 72% -10%,#27436f 0%,var(--indigo) 40%,var(--indigo-deep) 100%);color:#EDE6D7;text-align:center;overflow:hidden}
+  .mockup::before{content:"";position:absolute;inset:0;background:radial-gradient(46% 38% at 50% 26%,rgba(182,64,42,.26),transparent 70%);pointer-events:none}
+  .mockup .wide{position:relative;z-index:1}
+  .mockup h2,.mockup h3{color:#fff}
+  .mockup h2{max-width:680px;margin-left:auto;margin-right:auto}
+  .mockup .eyebrow{color:#E8A491}
+  .mockup .intro{max-width:600px;margin:0 auto 28px;color:#D7CDBA}
+  .mchips{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:52px}
+  .mchip{display:inline-flex;align-items:center;gap:7px;font-size:13.5px;font-weight:600;color:#E4DAC9;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:999px;padding:8px 15px}
+  .mchip b{color:#fff}.mchip .star{color:#F4B740}
+
+  .device{position:relative;max-width:960px;margin:0 auto;perspective:2000px}
+  .float{position:absolute;z-index:4;font-size:12.5px;font-weight:600;background:rgba(255,255,255,.97);color:var(--ink);border-radius:13px;padding:11px 15px;box-shadow:0 22px 46px -18px rgba(0,0,0,.65);animation:floaty 4.5s ease-in-out infinite}
+  .float.fl-1{top:-20px;left:-8px;color:var(--vermilion-deep)}
+  .float.fl-2{bottom:54px;left:-34px;text-align:left;animation-delay:1.2s}
+  .float.fl-2 b{display:block;color:var(--sage);font-size:12.5px}
+  .float.fl-2 small{font-size:11px;color:var(--ink-soft);font-weight:500}
+  @keyframes floaty{50%{transform:translateY(-9px)}}
+
+  .browser{position:relative;background:#0e1a2c;border:1px solid rgba(255,255,255,.14);border-radius:16px;overflow:hidden;box-shadow:0 70px 130px -45px rgba(0,0,0,.8),0 0 0 1px rgba(255,255,255,.03);transform:rotateX(7deg) rotateY(-8deg);transform-origin:50% 50%;transition:transform .6s ease}
+  .device:hover .browser{transform:rotateX(2deg) rotateY(-2deg)}
+  .bbar{display:flex;gap:7px;align-items:center;padding:12px 16px;background:#15243a;border-bottom:1px solid rgba(255,255,255,.07)}
+  .bbar i{width:11px;height:11px;border-radius:50%;display:block}
+  .bbar i:nth-child(1){background:#ff5f57}.bbar i:nth-child(2){background:#febc2e}.bbar i:nth-child(3){background:#28c840}
+  .bbar .url{margin:0 auto;font-size:12px;color:#9fb0c9;background:#0c1626;border:1px solid rgba(255,255,255,.06);border-radius:7px;padding:5px 16px 5px 29px;position:relative;min-width:230px;text-align:center}
+  .bbar .url::before{content:"🔒";position:absolute;left:11px;top:50%;transform:translateY(-50%);font-size:9px}
+
+  .app{display:grid;grid-template-columns:184px 1fr;min-height:436px;background:linear-gradient(160deg,#14253f,#0b1322)}
+  .side{padding:20px 14px;border-right:1px solid rgba(255,255,255,.07);text-align:left;background:rgba(255,255,255,.015)}
+  .side .logo{display:flex;align-items:center;gap:9px;font-family:var(--serif);font-weight:700;color:#fff;font-size:15px;margin-bottom:22px}
+  .side .logo .seal{width:30px;height:30px;border-radius:50%;border:1.5px solid var(--vermilion);color:var(--vermilion);display:flex;align-items:center;justify-content:center;font-size:14px;flex-shrink:0}
+  .side nav a{display:flex;align-items:center;gap:11px;font-size:13px;color:#9fb0c9;padding:9px 11px;border-radius:9px;margin-bottom:2px;font-weight:600}
+  .side nav a .ni{width:16px;text-align:center;font-size:12px}
+  .side nav a.on{background:rgba(182,64,42,.18);color:#fff}
+  .side .me{display:flex;align-items:center;gap:9px;margin-top:22px;padding-top:16px;border-top:1px solid rgba(255,255,255,.07)}
+  .side .me .av{width:30px;height:30px;border-radius:50%;background:linear-gradient(135deg,#B6402A,#E8A491);flex-shrink:0}
+  .side .me small{font-size:11px;color:#cfd8e6}.side .me small b{display:block;color:#fff;font-size:12.5px}
+
+  .main{padding:22px 22px 26px;text-align:left;overflow:hidden}
+  .main .greet{font-size:11.5px;color:#9fb0c9;font-weight:700;letter-spacing:.05em;text-transform:uppercase;margin-bottom:13px}
+  .cont{position:relative;border-radius:14px;overflow:hidden;padding:22px 24px;min-height:152px;display:flex;flex-direction:column;justify-content:flex-end;margin-bottom:22px;border:1px solid rgba(255,255,255,.1);
+    background:linear-gradient(100deg,rgba(8,15,26,.95) 30%,rgba(8,15,26,.25)),url('https://images.pexels.com/photos/5480235/pexels-photo-5480235.jpeg?auto=compress&cs=tinysrgb&w=640') right center/cover,var(--vermilion-deep)}
+  .cont .tag{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#E8A491;margin-bottom:7px}
+  .cont h4{font-family:var(--serif);font-size:21px;color:#fff;font-weight:600;line-height:1.15;margin-bottom:13px;max-width:320px}
+  .cont .meta{display:flex;align-items:center;gap:11px;font-size:12px;color:#cfd8e6}
+  .cont .prog{flex:1;max-width:160px;height:6px;border-radius:4px;background:rgba(255,255,255,.22);overflow:hidden}
+  .cont .prog i{display:block;height:100%;width:62%;background:var(--vermilion);border-radius:4px}
+  .cont .play{position:absolute;right:24px;top:50%;transform:translateY(-50%);width:56px;height:56px;border-radius:50%;background:rgba(255,255,255,.94);display:flex;align-items:center;justify-content:center;box-shadow:0 12px 32px -8px rgba(0,0,0,.6)}
+  .cont .play::after{content:"";border-left:17px solid var(--vermilion-deep);border-top:11px solid transparent;border-bottom:11px solid transparent;margin-left:5px}
+
+  .sec-t{font-size:13px;font-weight:700;color:#fff;margin-bottom:12px;display:flex;align-items:center;justify-content:space-between}
+  .sec-t em{font-size:11px;color:#9fb0c9;font-weight:600;font-style:normal}
+  .mgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+  .mtile{position:relative;background:rgba(255,255,255,.045);border:1px solid rgba(255,255,255,.1);border-radius:12px;overflow:hidden;transition:transform .2s,background .2s}
+  .mtile:hover{transform:translateY(-3px);background:rgba(255,255,255,.08)}
+  .mtile .thumb{width:100%;height:78px;object-fit:cover;display:block}
+  .mtile .ti{padding:12px 13px 14px}
+  .mtile .ic{width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,var(--vermilion),#d4644a);display:flex;align-items:center;justify-content:center;font-size:18px;margin-bottom:11px;box-shadow:0 7px 16px -6px rgba(182,64,42,.85)}
+  .mtile b{display:block;font-size:13.5px;color:#fff;font-weight:600;line-height:1.2;margin-bottom:2px}
+  .mtile span{font-size:11px;color:#9FB0C9}
+  .mtile .bar{height:5px;border-radius:3px;background:rgba(255,255,255,.12);margin-top:11px;overflow:hidden}
+  .mtile .bar i{display:block;height:100%;background:linear-gradient(90deg,var(--vermilion),#E8A491);border-radius:3px}
+  .mtile .ck{position:absolute;top:11px;right:11px;width:19px;height:19px;border-radius:50%;background:#28c840;color:#06210f;font-size:11px;display:flex;align-items:center;justify-content:center;font-weight:800}
+
+  .phone{position:absolute;right:-22px;bottom:-34px;width:184px;background:#0f1b2d;border:7px solid #05080f;border-radius:30px;overflow:hidden;box-shadow:0 40px 60px -20px rgba(0,0,0,.8);z-index:3}
+  .phone .pscreen{padding:30px 14px 18px;background:linear-gradient(180deg,#1a2c49,#0d1726);position:relative}
+  .phone .notch{position:absolute;top:9px;left:50%;transform:translateX(-50%);width:52px;height:5px;background:#05080f;border-radius:4px}
+  .phone .pt{font-family:var(--serif);font-size:13px;color:#fff;text-align:center;margin-bottom:4px}
+  .phone .ring{position:relative;width:74px;height:74px;border-radius:50%;margin:8px auto 5px;background:conic-gradient(var(--vermilion) 0 .66turn,rgba(255,255,255,.13) .66turn 1turn)}
+  .phone .ring::after{content:"2/3";position:absolute;inset:8px;border-radius:50%;background:#0d1726;display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:15px;color:#fff;font-weight:700}
+  .phone .rlabel{text-align:center;font-size:10px;color:#9fb0c9;margin-bottom:13px}
+  .phone .prow{display:flex;gap:8px;align-items:center;background:rgba(255,255,255,.06);border-radius:10px;padding:8px;margin-bottom:7px}
+  .phone .prow .d{width:26px;height:26px;border-radius:7px;background:var(--vermilion);flex-shrink:0;font-size:13px;display:flex;align-items:center;justify-content:center}
+  .phone .prow small{font-size:10px;color:#cfd8e6;line-height:1.25}
+  .phone .prow.done{opacity:.7}.phone .prow.done .d{background:#28c840}.phone .prow.done b{color:#5fce8f}
+  .mockup .foot{margin-top:60px;color:#C9BFAD;font-size:15px}
+  @media(max-width:760px){
+    .device{perspective:none}
+    .browser{transform:none}
+    .app{grid-template-columns:1fr}
+    .side,.float{display:none}
+    .cont h4{font-size:18px}
+    .mockup .foot{margin-top:30px}
+  }
+  @media(prefers-reduced-motion:reduce){.float{animation:none}.browser{transform:none}}
+
+  /* MODULES (text detail) */
+  .modules{background:var(--paper-2)}
+  .modules .intro{max-width:640px;margin:0 auto 40px;text-align:center;color:var(--ink-soft)}
+  .cards{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  .card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px}
+  .card .num{font-family:var(--serif);font-size:14px;color:var(--vermilion);font-weight:600}
+  .card .jp{font-size:13px;color:var(--sage);margin-bottom:8px}
+  .card h3{margin:4px 0 8px}
+  .card p{font-size:16.5px;line-height:1.55;color:var(--ink-soft);margin:0}
+  .card .tip{margin-top:10px;font-size:14.5px;color:var(--vermilion);font-style:italic}
+
+  /* BONUS */
+  .bonus h2{text-align:center;max-width:560px;margin:0 auto}
+  .bonus .sub{text-align:center;color:var(--ink-soft);margin-bottom:36px}
+  .blist{display:grid;gap:14px;max-width:620px;margin:0 auto}
+  .brow{display:flex;gap:16px;align-items:flex-start;background:var(--paper-2);border:1px solid var(--line);border-radius:14px;padding:20px 22px}
+  .brow .gift{font-size:24px;flex-shrink:0}
+  .brow h3{font-size:18px;margin-bottom:4px}
+  .brow p{font-size:15.5px;color:var(--ink-soft);margin:0}
+  .brow .val{font-size:14px;color:var(--sage);font-weight:600;white-space:nowrap;margin-left:auto;align-self:center}
+
+  /* PROOF */
+  .proof{background:var(--paper);text-align:center}
+  .proof .count{font-family:var(--serif);font-size:clamp(34px,6vw,50px);color:var(--indigo);font-weight:600;line-height:1}
+  .proof .count small{display:block;font-family:var(--sans);font-size:16px;font-weight:600;color:var(--ink-soft);margin-top:10px}
+  .tgrid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:40px;text-align:left}
+  .tcard{background:var(--paper-2);border:1px solid var(--line);border-radius:14px;padding:22px}
+  .tcard .stars{color:var(--vermilion);letter-spacing:2px;font-size:15px;margin-bottom:10px}
+  .tcard p{font-size:16px;line-height:1.55;margin-bottom:14px}
+  .tcard .who{display:flex;gap:11px;align-items:center}
+
+  /* AUTHORITY */
+  .auth ul{list-style:none;margin:18px 0}
+  .auth li{position:relative;padding-left:26px;margin-bottom:12px;color:var(--ink-soft)}
+  .auth li::before{content:"·";position:absolute;left:6px;color:var(--vermilion);font-weight:700;font-size:24px;top:-4px}
+  .safebox{background:var(--paper-2);border:1px solid var(--line);border-left:3px solid var(--sage);border-radius:10px;padding:18px 22px;font-size:16px;color:var(--ink-soft);margin-top:24px}
+
+  /* OFFER */
+  .offer{background:var(--indigo-deep);color:#EDE6D7}
+  .offer h2{color:#fff;text-align:center}
+  .offer .anchor{text-align:center;color:#C9BFAD;max-width:520px;margin:0 auto 36px}
+  .offerbox{background:var(--paper);color:var(--ink);border-radius:22px;max-width:560px;margin:0 auto;padding:38px 34px 40px;position:relative;box-shadow:0 30px 60px -25px rgba(0,0,0,.5)}
+  .stack{list-style:none;margin:0 0 8px}
+  .stack li{display:flex;justify-content:space-between;gap:14px;padding:11px 0;border-bottom:1px solid var(--line);font-size:16.5px}
+  .stack li span:last-child{font-weight:600;color:var(--ink-soft);white-space:nowrap}
+  .stack li.total{border-bottom:none;padding-top:16px;font-weight:700}
+  .stack li.total .strike{text-decoration:line-through;color:var(--ink-soft);font-weight:600}
+  .pricewrap{text-align:center;margin-top:18px;position:relative}
+  .price-seal{position:absolute;right:-4px;top:-58px;width:92px;height:92px;border-radius:50%;background:var(--vermilion);color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;transform:rotate(-9deg);box-shadow:0 12px 24px -10px rgba(154,50,33,.8);font-family:var(--serif)}
+  .price-seal b{font-size:28px;line-height:1;font-weight:700}
+  .price-seal small{font-size:11px;letter-spacing:.06em;margin-top:2px}
+  .pricewrap .now{font-size:16px;color:var(--ink-soft);margin-bottom:14px}
+  .pricewrap .big{font-family:var(--serif);font-size:46px;color:var(--vermilion);font-weight:700;line-height:1}
+  .pricewrap .inst{font-size:15px;color:var(--ink-soft);margin:4px 0 22px}
+  .offerbox .cta{width:100%}
+
+  /* OBJECTIONS / FAQ */
+  .obj .item{padding:20px 0;border-bottom:1px solid var(--line)}
+  .obj .item:last-child{border-bottom:none}
+  .obj .item h3{margin-bottom:4px}
+  .obj .item p{font-size:17px;color:var(--ink-soft);margin:0}
+  details{border-bottom:1px solid var(--line);padding:6px 0}
+  summary{font-family:var(--serif);font-size:19px;font-weight:600;cursor:pointer;padding:14px 36px 14px 0;position:relative;list-style:none}
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:"+";position:absolute;right:4px;top:11px;font-size:26px;color:var(--vermilion);font-weight:400;transition:transform .2s}
+  details[open] summary::after{transform:rotate(45deg)}
+  details p{font-size:16.5px;color:var(--ink-soft);padding:0 0 16px}
+
+  /* GUARANTEE */
+  .guar{background:var(--paper-2);text-align:center}
+  .guar-seal{width:140px;height:140px;border-radius:50%;margin:0 auto 26px;border:2px solid var(--vermilion);color:var(--vermilion);display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:var(--serif);transform:rotate(-5deg);position:relative}
+  .guar-seal::after{content:"";position:absolute;inset:7px;border-radius:50%;border:1px solid rgba(182,64,42,.4)}
+  .guar-seal b{font-size:46px;line-height:.9;font-weight:700}
+  .guar-seal small{font-size:12px;letter-spacing:.14em;text-transform:uppercase;margin-top:6px}
+  .guar h2{max-width:540px;margin:0 auto .5em}
+  .guar p{max-width:560px;margin:0 auto;color:var(--ink-soft)}
+
+  .ctablock{text-align:center}
+  .disc{background:var(--paper-2);font-size:14.5px;color:var(--ink-soft);text-align:center}
+  .disc p{max-width:640px;margin:0 auto}
+  footer{padding:30px 0 40px;text-align:center;font-size:13.5px;color:var(--ink-soft)}
+  footer a{color:var(--ink-soft)}
+
+  .sticky{position:fixed;left:0;right:0;bottom:0;z-index:50;background:rgba(244,239,229,.96);backdrop-filter:blur(8px);border-top:1px solid var(--line);padding:12px 16px;display:none;align-items:center;gap:14px;justify-content:space-between;transform:translateY(120%);transition:transform .3s}
+  .sticky.show{transform:translateY(0)}
+  .sticky .pp{font-family:var(--serif);font-weight:700;line-height:1.1}
+  .sticky .pp small{display:block;font-family:var(--sans);font-size:11px;font-weight:600;color:var(--ink-soft)}
+  .sticky .cta{padding:14px 22px;font-size:16px;box-shadow:none}
+
+  .rv{opacity:0;transform:translateY(16px);transition:opacity .6s,transform .6s}
+  .rv.in{opacity:1;transform:none}
+
+  @media(max-width:760px){
+    body{font-size:18px}
+    .hero-grid,.split{grid-template-columns:1fr;gap:28px}
+    .hero .photo{aspect-ratio:16/11}
+    .mgrid{grid-template-columns:1fr 1fr}
+    .cards,.tgrid,.sgrid{grid-template-columns:1fr}
+    .cgrid{grid-template-columns:1fr 1fr;gap:9px}
+    .cgrid div{font-size:14px;padding:12px}
+    .phone{display:none}
+    .brow .val{display:none}
+    .sticky{display:flex}
+    .price-seal{width:82px;height:82px;top:-46px;right:0}
+    .price-seal b{font-size:24px}
+    main{padding-bottom:72px}
+  }
+  @media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}.cta{transition:none}}
+</style>
+</head>
+<body>
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wide">
+      <div class="hero-grid">
+        <div class="rv in">
+          <div class="seal-mark"><span><span class="kanji">癒</span>AOMORI</span></div>
+          <span class="eyebrow">Para quem já tentou de tudo e a dor nas juntas sempre volta</span>
+          <h1>O ritual japonês de 15 segundos que está aliviando a dor nas juntas de quem já tinha desistido de tudo</h1>
+          <p class="lead"><strong>Direto das curandeiras de Aomori, no norte do Japão:</strong> o ritual de ervas anti-inflamatórias que elas passam de mãe pra filha há séculos pra acalmar a dor nas juntas, agora adaptado pras plantas que você acha em qualquer feira do Brasil. Feito pra quem vive com dor no joelho, na coluna, nas mãos e nas costas e já tentou de tudo. <strong>Sem farmácia, sem receita e sem pagar R$200 num pote importado.</strong></p>
+          <a class="cta" href="#oferta">Quero começar o ritual agora</a>
+          <div class="cta-note"><span>✓ Acesso imediato</span>·<span>✓ Passo a passo</span>·<span>✓ Garantia de 7 dias</span></div>
+        </div>
+        <div class="photo rv in">
+          <img src="https://images.pexels.com/photos/5480235/pexels-photo-5480235.jpeg?auto=compress&cs=tinysrgb&w=900&h=1125&fit=crop" alt="Ervas sendo maceradas em um almofariz de pedra sobre madeira, no preparo do ritual" width="900" height="1125" fetchpriority="high">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INGREDIENT BAND -->
+  <section class="band" style="padding:34px 0">
+    <div class="wide">
+      <div class="ing">
+        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M20 40c-6-4-8-12-3-18s14-6 19-1c4 4 5 8 11 10 5 2 8 7 5 13s-12 7-18 4c-5-3-8-3-13-1"/><path d="M30 22l4-7M40 26l6-5"/></svg>
+        <b>Gengibre</b><span>shoga</span>
+      </div>
+      <div class="ing">
+        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M32 52V20M32 20c-9 0-16-6-16-6s2 12 11 12M32 28c9 0 16-6 16-6s-2 12-11 12M32 36c-7 0-13-5-13-5s2 9 9 9"/></svg>
+        <b>Artemísia</b><span>yomogi</span>
+      </div>
+      <div class="ing">
+        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M18 30h28v6a14 14 0 0 1-28 0zM46 32h6a5 5 0 0 1 0 10h-6"/><path d="M26 22c0-3 2-4 2-7M34 22c0-3 2-4 2-7"/></svg>
+        <b>Cúrcuma</b><span>ukon</span>
+      </div>
+      <div class="ing">
+        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M14 34h32a16 16 0 0 1-32 0zM46 36h4a4 4 0 0 1 0 8M20 44h20"/><path d="M26 24c-2-3 2-5 0-8M38 24c-2-3 2-5 0-8"/></svg>
+        <b>Chá verde</b><span>sencha</span>
+      </div>
+      <div class="ing">
+        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M32 54V20"/><path d="M32 32c-4-6-13-6-17-3 2 8 11 10 17 6zM32 26c4-6 13-6 17-3-2 8-11 10-17 6zM32 44c-4-6-13-6-17-3 2 8 11 10 17 6z"/></svg>
+        <b>Erva-baleeira</b><span>バレイラ</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAIN -->
+  <section class="pain rv">
+    <div class="wrap">
+      <h2>Cansou de viver com medo do próximo movimento que vai doer?</h2>
+      <p>Você não fala em voz alta, mas a verdade é essa: a dor foi, aos poucos, tomando conta da sua vida. Hoje você…</p>
+      <ul>
+        <li>Pensa duas vezes antes de pegar o neto no colo, com medo de não aguentar o peso</li>
+        <li>Desiste do passeio, da viagem, da caminhada, porque não sabe como o corpo vai reagir</li>
+        <li>Acorda quebrado mesmo tendo dormido, porque a dor não deixa o sono ser inteiro</li>
+        <li>Já torrou dinheiro em pomada cara que alivia por umas horas, e a dor volta igualzinha</li>
+        <li>Sente o corpo travar quando esfria e leva longos minutos pra destravar de manhã</li>
+      </ul>
+      <p class="fear">E no fundo mora um medo que quase ninguém tem coragem de dizer: <em>“e se piorar? E se um dia eu não conseguir mais fazer as coisas sozinho?”</em></p>
+      <p style="margin-top:26px">A boa notícia? Dá pra virar esse jogo em casa, de um jeito simples e natural, com as suas próprias mãos.</p>
+    </div>
+  </section>
+
+  <!-- CONDITIONS CHECKLIST -->
+  <section class="cond rv">
+    <div class="wrap">
+      <h2>💔 Você convive com alguma dessas dores?</h2>
+      <p class="sub">Se marcar pelo menos uma, presta atenção no que vem agora.</p>
+      <div class="cgrid">
+        <div>Artrite</div>
+        <div>Artrose</div>
+        <div>Dor nas costas</div>
+        <div>Dor nos joelhos</div>
+        <div>Dor no pescoço</div>
+        <div>Dor nas mãos</div>
+        <div>Dor nos pés</div>
+        <div>Bursite</div>
+        <div>Hérnia de disco</div>
+        <div>Bico de papagaio</div>
+        <div>Osteoporose</div>
+        <div>Dor crônica</div>
+      </div>
+      <p class="cpay">Marcou uma que seja? Então o ritual de Aomori foi feito pra te dar <strong>alívio natural todos os dias</strong>, em casa, sem depender de pomada cara.</p>
+    </div>
+  </section>
+
+  <!-- MECHANISM (split with image) -->
+  <section class="rv">
+    <div class="wide">
+      <div class="split">
+        <div>
+          <h2>Você vem tratando o lugar errado esse tempo todo</h2>
+          <p>Quase toda dor que trava o corpo, seja no joelho, na coluna, nas mãos ou no pescoço, tem o <strong>mesmo gatilho por trás: a inflamação</strong>. É ela que deixa a articulação quente, inchada e rígida.</p>
+          <p>E é aqui que está a armadilha que ninguém te contou: a maioria das pomadas de farmácia só <strong>abafa o sintoma</strong>. Alivia por umas horas, o efeito passa, e a dor volta igual no dia seguinte, porque a inflamação continua ali, intacta, fazendo o estrago por dentro.</p>
+          <p>O ritual de Aomori vai por outro caminho: em vez de só mascarar, ele mira a <strong>inflamação que está na origem da dor</strong>, por fora e por dentro.</p>
+        </div>
+        <div class="photo">
+          <img src="https://images.pexels.com/photos/8625537/pexels-photo-8625537.jpeg?auto=compress&cs=tinysrgb&w=1000&h=750&fit=crop" alt="Mão segurando o joelho, aliviando a dor na articulação" width="1000" height="750" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3 STEPS -->
+  <section class="steps rv">
+    <div class="wide">
+      <div class="intro">
+        <span class="eyebrow">Como o ritual age na sua dor</span>
+        <h2>3 frentes contra a dor, ao mesmo tempo</h2>
+      </div>
+      <div class="sgrid">
+        <div class="step"><div class="si">🌿</div><b>1. Acalma a inflamação</b><p>Pomadas de gengibre e cúrcuma direto no ponto da dor, com ervas de ação anti-inflamatória conhecida há séculos.</p></div>
+        <div class="step"><div class="si">🔥</div><b>2. Solta a rigidez</b><p>Calor do ofuro, compressas e automassagem shiatsu pra desinchar e destravar a articulação travada.</p></div>
+        <div class="step"><div class="si">🍵</div><b>3. Mantém o alívio</b><p>Chás e o plano de 30 dias pra manter a inflamação baixa e a dor não voltar com tudo na primeira friagem.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIFFERENTIAL -->
+  <section class="pain rv" style="background:var(--paper-2)">
+    <div class="wrap">
+      <div class="label">O detalhe que muda tudo</div>
+      <h2>Por que aquela “receita milagrosa” do WhatsApp nunca aliviou nada</h2>
+      <p>Talvez você já tenha tentado alguma e não sentiu nada. O motivo é simples: <strong>não é uma erva só. É a combinação certa, na proporção certa, preparada do jeito certo.</strong> Errar qualquer um desses três pontos é o que separa um preparo que alivia de um que não faz nada.</p>
+      <p>Foi exatamente essa combinação que foi traduzida do ritual de Aomori e <strong>adaptada com plantas que você acha em qualquer feira ou mercado no Brasil</strong>. Sem farmácia, sem ingrediente importado, sem pagar R$200 num pote.</p>
+    </div>
+  </section>
+
+  <!-- PRODUCT MOCKUP -->
+  <section class="mockup rv">
+    <div class="wide">
+      <span class="eyebrow">O que você recebe hoje</span>
+      <h2>Esqueça o PDF perdido no e-mail. Aqui é o ritual inteiro mastigado pra você.</h2>
+      <p class="intro">Tudo na palma da sua mão, no celular ou no computador. Você entra, aperta o play e faz junto, passo a passo, sem complicação nenhuma.</p>
+      <div class="mchips">
+        <span class="mchip">🔓 <b>Acesso vitalício</b></span>
+        <span class="mchip"><span class="star">★</span> <b>4,9</b> de avaliação</span>
+        <span class="mchip">👥 <b>+86.000</b> alunos</span>
+        <span class="mchip">📱 Celular &amp; computador</span>
+      </div>
+
+      <div class="device">
+        <div class="float fl-1">🔓 Acesso vitalício liberado</div>
+        <div class="float fl-2"><b>✓ Aula concluída</b><small>Pomada de cúrcuma</small></div>
+        <div class="browser">
+          <div class="bbar"><i></i><i></i><i></i><span class="url">ritualjapones.com.br/acesso</span></div>
+          <div class="app">
+            <aside class="side">
+              <div class="logo"><span class="seal">癒</span> Ritual Aomori</div>
+              <nav>
+                <a class="on"><span class="ni">▦</span> Início</a>
+                <a><span class="ni">▶</span> Meus rituais</a>
+                <a><span class="ni">📅</span> Plano 30 dias</a>
+                <a><span class="ni">🎁</span> Bônus</a>
+                <a><span class="ni">👥</span> Comunidade</a>
+              </nav>
+              <div class="me"><div class="av"></div><small><b>Maria R.</b>Membro</small></div>
+            </aside>
+            <div class="main">
+              <div class="greet">Bem-vinda de volta, Maria 👋</div>
+              <div class="cont">
+                <div class="tag">Continue de onde parou</div>
+                <h4>Pomada de Gengibre Passo a Passo</h4>
+                <div class="meta"><span>Aula 4 de 6</span><div class="prog"><i></i></div><span>62%</span></div>
+                <div class="play"></div>
+              </div>
+              <div class="sec-t">Seus módulos <em>6 módulos · 24 aulas</em></div>
+              <div class="mgrid">
+                <div class="mtile"><span class="ck">✓</span><img class="thumb" src="https://images.pexels.com/photos/4871159/pexels-photo-4871159.jpeg?auto=compress&cs=tinysrgb&w=400&h=240&fit=crop" alt="" loading="lazy"><div class="ti"><b>Pomadas Caseiras</b><span>6 aulas · 38 min</span><div class="bar"><i style="width:100%"></i></div></div></div>
+                <div class="mtile"><img class="thumb" src="https://images.pexels.com/photos/6962419/pexels-photo-6962419.jpeg?auto=compress&cs=tinysrgb&w=400&h=240&fit=crop" alt="" loading="lazy"><div class="ti"><b>Chás e Bebidas</b><span>5 aulas · 26 min</span><div class="bar"><i style="width:60%"></i></div></div></div>
+                <div class="mtile"><img class="thumb" src="https://images.pexels.com/photos/6724402/pexels-photo-6724402.jpeg?auto=compress&cs=tinysrgb&w=400&h=240&fit=crop" alt="" loading="lazy"><div class="ti"><b>Ritual do Ofuro</b><span>4 aulas · 22 min</span><div class="bar"><i style="width:25%"></i></div></div></div>
+                <div class="mtile"><img class="thumb" src="https://images.pexels.com/photos/4599424/pexels-photo-4599424.jpeg?auto=compress&cs=tinysrgb&w=400&h=240&fit=crop" alt="" loading="lazy"><div class="ti"><b>Shiatsu + Along.</b><span>5 aulas · 31 min</span><div class="bar"><i style="width:0%"></i></div></div></div>
+                <div class="mtile"><img class="thumb" src="https://images.pexels.com/photos/4871156/pexels-photo-4871156.jpeg?auto=compress&cs=tinysrgb&w=400&h=240&fit=crop" alt="" loading="lazy"><div class="ti"><b>Alimentação</b><span>4 aulas · 19 min</span><div class="bar"><i style="width:0%"></i></div></div></div>
+                <div class="mtile"><img class="thumb" src="https://images.pexels.com/photos/161556/ginger-plant-asia-rhizome-161556.jpeg?auto=compress&cs=tinysrgb&w=400&h=240&fit=crop" alt="" loading="lazy"><div class="ti"><b>Plano de 30 Dias</b><span>30 passos diários</span><div class="bar"><i style="width:10%"></i></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="phone">
+          <div class="pscreen">
+            <div class="notch"></div>
+            <div class="pt">Ritual de hoje</div>
+            <div class="ring"></div>
+            <div class="rlabel">2 de 3 passos concluídos</div>
+            <div class="prow done"><div class="d">✓</div><small>Pomada de gengibre<br><b>Feito</b></small></div>
+            <div class="prow done"><div class="d">✓</div><small>Shogayu (chá quente)<br><b>Feito</b></small></div>
+            <div class="prow"><div class="d">🛁</div><small>Banho de ofuro<br>com artemísia</small></div>
+          </div>
+        </div>
+      </div>
+      <p class="foot">Imagem ilustrativa do conteúdo.</p>
+    </div>
+  </section>
+
+  <!-- MODULES detail -->
+  <section class="modules rv">
+    <div class="wide">
+      <div class="intro">
+        <span class="eyebrow" style="color:var(--vermilion)">Os 6 módulos</span>
+        <h2>O ritual completo, em aulas práticas</h2>
+        <p>Se você sabe ferver uma água e mexer uma panela, você consegue.</p>
+      </div>
+      <div class="cards">
+        <div class="card"><div class="num">Módulo 01</div><div class="jp">生姜 · 鬱金 · Shoga &amp; Ukon</div><h3>Pomadas Caseiras</h3><p>O coração do ritual: como preparar suas pomadas com as proporções exatas, com gengibre e cúrcuma. Versões pra joelho, coluna, mãos e dor geral.</p><div class="tip">A aula 1 resolve o erro nº1: a proporção de erva pra base.</div></div>
+        <div class="card"><div class="num">Módulo 02</div><div class="jp">茶 · O-cha</div><h3>Chás e Bebidas</h3><p>O lado de dentro do ritual: shogayu (gengibre), chá de ukon (cúrcuma de Okinawa), chá verde e chá de yomogi (artemísia).</p></div>
+        <div class="card"><div class="num">Módulo 03</div><div class="jp">お風呂 · Ofuro</div><h3>Banhos e Compressas</h3><p>O banho de imersão inspirado nas águas termais, turbinado com sal de Epsom, gengibre e artemísia. E quando usar calor ou frio.</p></div>
+        <div class="card"><div class="num">Módulo 04</div><div class="jp">指圧 · Shiatsu</div><h3>Automassagem + Alongamentos</h3><p>A massagem japonesa de pressão com os dedos, numa rotina simples nos pontos-chave, com alongamentos que destravam a articulação.</p></div>
+        <div class="card"><div class="num">Módulo 05</div><div class="jp">腹八分 · Hara Hachi Bu</div><h3>Alimentação Japonesa</h3><p>Missô, gengibre, cúrcuma, ômega-3, algas, gergelim e chá verde, adaptados ao Brasil. Mais o hábito okinawano de comer até 80%.</p></div>
+        <div class="card"><div class="num">Módulo 06</div><div class="jp">三十日 · 30 dias</div><h3>Plano de 30 Dias</h3><p>Um passo simples por dia, juntando pomada, chá, banho e automassagem na ordem certa. É só seguir.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BONUS -->
+  <section class="bonus rv">
+    <div class="wrap">
+      <span class="eyebrow" style="display:block;text-align:center">Bônus desta página</span>
+      <h2>E ainda, 4 bônus pra facilitar tudo</h2>
+      <p class="sub">Inclusos sem custo adicional nesta condição.</p>
+      <div class="blist">
+        <div class="brow"><div class="gift">🌿</div><div><h3>Guia de Substituição de Ervas Brasileiras</h3><p>Onde achar (e por quanto) cada erva, e o que usar no lugar quando faltar.</p></div><div class="val">R$47</div></div>
+        <div class="brow"><div class="gift">🌙</div><div><h3>Protocolo “Noite Sem Dor”</h3><p>O mini-ritual pra fazer antes de dormir e ter mais chance de uma noite inteira de sono.</p></div><div class="val">R$37</div></div>
+        <div class="brow"><div class="gift">🛒</div><div><h3>Lista de Compras Anti-inflamatória</h3><p>O que colocar no carrinho do mercado pra manter a inflamação baixa no dia a dia.</p></div><div class="val">R$27</div></div>
+        <div class="brow"><div class="gift">👥</div><div><h3>Acesso ao Grupo de Apoio</h3><p>Comunidade pra tirar dúvidas e ver o que está funcionando pra outras pessoas.</p></div><div class="val">R$67</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROOF -->
+  <section class="proof rv">
+    <div class="wide">
+      <!-- AJUSTE para um número REAL e verificável -->
+      <div class="count">+86.000<small>brasileiros já começaram o ritual em casa</small></div>
+      <div class="tgrid" style="max-width:760px;margin-left:auto;margin-right:auto">
+        <!-- DEPOIMENTOS EXEMPLO. Troque por reais. Iniciais no avatar até ter foto real autorizada. Print de WhatsApp converte mais. -->
+        <div class="tcard"><div class="stars">★★★★★</div><p>“Eu gastava quase R$200 num pote importado que durava 3 semanas. Hoje faço a minha por uns trocados e o alívio é o mesmo.”</p><div class="who"><div class="avatar">JC</div><div class="by">[Nome]<br>[cidade]</div></div></div>
+        <div class="tcard"><div class="stars">★★★★★</div><p>“O que mais me ajudou foi descobrir a hora certa de usar compressa quente e fria. Eu fazia tudo errado.”</p><div class="who"><div class="avatar">AS</div><div class="by">[Nome]<br>[cidade]</div></div></div>
+        <div class="tcard"><div class="stars">★★★★★</div><p>“As aulas são muito fáceis de seguir. Minha filha nem precisou me ajudar.”</p><div class="who"><div class="avatar">LF</div><div class="by">[Nome]<br>[cidade]</div></div></div>
+        <div class="tcard"><div class="stars">★★★★★</div><p>“Voltei a dormir a noite inteira. Pra mim já valeu só por isso.”</p><div class="who"><div class="avatar">RM</div><div class="by">[Nome]<br>[cidade]</div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AUTHORITY -->
+  <section class="auth rv">
+    <div class="wrap">
+      <div class="label">De onde vem esse conhecimento</div>
+      <h2>Não é modismo de internet. É tradição que sobreviveu gerações.</h2>
+      <p>O ritual tem origem em <strong>Aomori</strong>, no norte do Japão, e dialoga com a medicina tradicional japonesa (<strong>Kampo</strong>), a fitoterapia oficial usada no sistema de saúde de lá:</p>
+      <ul>
+        <li>O <strong>ofuro/onsen</strong> (banho de imersão) é tradição milenar pra circulação e dores.</li>
+        <li>A <strong>artemísia (yomogi)</strong> aparece no chá, no banho de vapor e na moxabustão (okyu).</li>
+        <li>O <strong>Shiatsu</strong> é a massagem japonesa reconhecida no mundo todo.</li>
+      </ul>
+      <div class="safebox"><strong>Com honestidade:</strong> moxabustão e fórmulas do Kampo aparecem aqui como conhecimento e curiosidade. Por envolverem fogo na pele e possíveis interações com remédios, devem ser buscadas com um profissional. No material, você pratica as versões seguras e caseiras (chá e banho de artemísia).</div>
+    </div>
+  </section>
+
+  <!-- OFFER -->
+  <section class="offer rv" id="oferta">
+    <div class="wrap">
+      <h2>Quanto custa o ritual completo</h2>
+      <p class="anchor">Um único pote daquela pomada importada custa mais de R$200, e acaba em semanas. Aqui você não leva um pote. Leva o ritual inteiro, pra fazer quantas vezes quiser, pra sempre.</p>
+      <div class="offerbox">
+        <ul class="stack">
+          <li><span>Módulo Pomadas Caseiras</span><span>R$97</span></li>
+          <li><span>Módulo Chás e Bebidas</span><span>R$47</span></li>
+          <li><span>Ritual do Ofuro (banhos)</span><span>R$47</span></li>
+          <li><span>Automassagem Shiatsu + Alongamentos</span><span>R$47</span></li>
+          <li><span>Alimentação Japonesa</span><span>R$47</span></li>
+          <li><span>Plano de 30 Dias</span><span>R$67</span></li>
+          <li><span>4 Bônus</span><span>R$178</span></li>
+          <li class="total"><span>Valor total</span><span class="strike">R$530</span></li>
+        </ul>
+        <div class="pricewrap">
+          <div class="price-seal"><b>R$27</b><small>hoje</small></div>
+          <div class="now">Hoje, nesta página, por apenas</div>
+          <div class="big">R$ 27</div>
+          <div class="inst">À vista ou em até 3x no cartão</div>
+          <a class="cta" href="#" data-checkout>Sim! Quero meu ritual por R$27</a>
+          <div class="cta-note"><span>✓ Acesso imediato</span>·<span>✓ Celular ou computador</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OBJECTIONS -->
+  <section class="obj rv">
+    <div class="wrap">
+      <h2 style="text-align:center;margin-bottom:30px">“Mas será que funciona pra mim?”</h2>
+      <div class="item"><h3>Não entendo nada de ervas, vou conseguir?</h3><p>Sim. É aula passo a passo, com medida exata. Se você sabe fazer um chá, você consegue.</p></div>
+      <div class="item"><h3>E se eu não achar as ervas?</h3><p>Por isso existe o Bônus 1 (Guia de Substituição), com onde achar e o que usar no lugar.</p></div>
+      <div class="item"><h3>É seguro?</h3><p>São preparos de uso tópico e alimentar com ingredientes naturais e tradicionais. Ainda assim, é conteúdo complementar e não substitui seu acompanhamento médico.</p></div>
+      <div class="item"><h3>Quanto tempo até sentir diferença?</h3><p>Varia de pessoa pra pessoa. Alguns relatam alívio nos primeiros dias, outros precisam de mais consistência. Por isso existe o Plano de 30 Dias.</p></div>
+      <div class="item"><h3>Como recebo?</h3><p>Acesso imediato após a compra, direto no seu celular ou computador.</p></div>
+    </div>
+  </section>
+
+  <!-- GUARANTEE -->
+  <section class="guar rv">
+    <div class="wrap">
+      <div class="guar-seal"><b>7</b><small>dias</small></div>
+      <h2>Garantia incondicional de 7 dias</h2>
+      <p>Entre, veja tudo por dentro, comece a fazer. Se em 7 dias você achar que não é pra você, devolvemos 100% do valor. É só mandar uma mensagem. O risco é todo nosso.</p>
+    </div>
+  </section>
+
+  <!-- URGENCY + CTA -->
+  <section class="ctablock rv">
+    <div class="wrap">
+      <h2>Pense rápido: mais um dia de dor, ou R$27?</h2>
+      <p style="color:var(--ink-soft);max-width:560px;margin:0 auto 30px">R$27 com os 4 bônus é o preço de lançamento. Conforme o conteúdo cresce, o valor sobe. Amanhã a dor vai estar igual; a única diferença é se você começou hoje ou ficou parado mais um dia.</p>
+      <a class="cta" href="#oferta">Quero o ritual completo por R$27</a>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="rv">
+    <div class="wrap">
+      <h2 style="text-align:center;margin-bottom:24px">Perguntas frequentes</h2>
+      <details><summary>É um e-book?</summary><p>É mais que isso: 6 módulos em aulas práticas (pomadas, chás, ritual do ofuro, automassagem shiatsu, alimentação e plano de 30 dias) e 4 bônus, num acesso digital.</p></details>
+      <details><summary>Serve pra qualquer idade?</summary><p>O conteúdo é pensado especialmente pra quem convive com dor articular, comum a partir dos 40 ou 50 anos. Mas qualquer adulto pode usar.</p></details>
+      <details><summary>Preciso de algum aparelho?</summary><p>Não. Só ingredientes comuns de feira ou mercado e utensílios de cozinha.</p></details>
+      <details><summary>Funciona pra qual tipo de dor?</summary><p>Foi pensado pra dores articulares e inflamatórias (joelho, coluna, mãos, pescoço, ombros). Não é tratamento de doença, é alívio natural complementar.</p></details>
+      <details><summary>E se eu não gostar?</summary><p>Garantia de 7 dias, devolução de 100%.</p></details>
+    </div>
+  </section>
+
+  <section class="disc">
+    <div class="wrap"><p>⚠️ Este conteúdo é informativo e complementar e <strong>não substitui</strong> acompanhamento médico. Em caso de dor persistente ou intensa, procure um profissional de saúde. As receitas são de uso tópico ou alimentar tradicional e os resultados variam de pessoa para pessoa.</p></div>
+  </section>
+
+  <footer><p>© <span id="yr"></span> [Sua Marca] · <a href="#">Política de Privacidade</a> · <a href="#">Termos de Uso</a> · <a href="#">Contato</a></p></footer>
+</main>
+
+<div class="sticky" id="sticky">
+  <div class="pp">R$27<small>de R$530 · hoje</small></div>
+  <a class="cta" href="#oferta">Quero o ritual</a>
+</div>
+
+<script>
+  document.getElementById('yr').textContent=new Date().getFullYear();
+  if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+    const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12});
+    document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+  }else{document.querySelectorAll('.rv').forEach(el=>el.classList.add('in'));}
+  const sticky=document.getElementById('sticky'),hero=document.querySelector('.hero'),offer=document.getElementById('oferta');
+  new IntersectionObserver((es)=>{es.forEach(e=>{if(e.target===hero&&!e.isIntersecting)sticky.classList.add('show');});},{threshold:0}).observe(hero);
+  new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting)sticky.classList.remove('show');});},{threshold:.3}).observe(offer);
+</script>
+</body>
+</html>
