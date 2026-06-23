@@ -58,7 +58,7 @@
 
   /* INGREDIENT BAND */
   .band{background:var(--paper-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-  .band .wide{display:flex;gap:18px;justify-content:center;flex-wrap:wrap;text-align:center}
+  .band .ingrow{display:flex;gap:18px;justify-content:center;flex-wrap:wrap;text-align:center}
   .ing{flex:1;min-width:140px;max-width:200px}
   .ing svg{width:54px;height:54px;color:var(--sage);margin-bottom:10px}
   .ing b{display:block;font-family:var(--serif);font-size:18px;font-weight:600}
@@ -312,41 +312,15 @@
       <div class="hero-grid">
         <div class="rv in">
           <div class="seal-mark"><span><span class="kanji">癒</span>AOMORI</span></div>
-          <span class="eyebrow">Para quem já tentou de tudo e a dor nas juntas sempre volta</span>
-          <h1>O ritual japonês de 15 segundos que está aliviando a dor nas juntas de quem já tinha desistido de tudo</h1>
-          <p class="lead"><strong>Direto das curandeiras de Aomori, no norte do Japão:</strong> o ritual de ervas anti-inflamatórias que elas passam de mãe pra filha há séculos pra acalmar a dor nas juntas, agora adaptado pras plantas que você acha em qualquer feira do Brasil. Feito pra quem vive com dor no joelho, na coluna, nas mãos e nas costas e já tentou de tudo. <strong>Sem farmácia, sem receita e sem pagar R$200 num pote importado.</strong></p>
-          <a class="cta" href="#oferta">Quero começar o ritual agora</a>
+          <span class="eyebrow">Para quem já tentou de tudo contra a dor nas juntas</span>
+          <h1>O ritual japonês de 15 segundos que alivia a dor nas juntas</h1>
+          <p class="lead">Um segredo das curandeiras de Aomori, no Japão, agora feito com <strong>ervas baratas da sua feira</strong>. Sem farmácia, sem receita, sem pote importado de R$200.</p>
+          <a class="cta" href="#oferta">Quero começar agora</a>
           <div class="cta-note"><span>✓ Acesso imediato</span>·<span>✓ Passo a passo</span>·<span>✓ Garantia de 7 dias</span></div>
         </div>
         <div class="photo rv in">
           <img src="https://images.pexels.com/photos/5480235/pexels-photo-5480235.jpeg?auto=compress&cs=tinysrgb&w=900&h=1125&fit=crop" alt="Ervas sendo maceradas em um almofariz de pedra sobre madeira, no preparo do ritual" width="900" height="1125" fetchpriority="high">
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- INGREDIENT BAND -->
-  <section class="band" style="padding:34px 0">
-    <div class="wide">
-      <div class="ing">
-        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M20 40c-6-4-8-12-3-18s14-6 19-1c4 4 5 8 11 10 5 2 8 7 5 13s-12 7-18 4c-5-3-8-3-13-1"/><path d="M30 22l4-7M40 26l6-5"/></svg>
-        <b>Gengibre</b><span>shoga</span>
-      </div>
-      <div class="ing">
-        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M32 52V20M32 20c-9 0-16-6-16-6s2 12 11 12M32 28c9 0 16-6 16-6s-2 12-11 12M32 36c-7 0-13-5-13-5s2 9 9 9"/></svg>
-        <b>Artemísia</b><span>yomogi</span>
-      </div>
-      <div class="ing">
-        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M18 30h28v6a14 14 0 0 1-28 0zM46 32h6a5 5 0 0 1 0 10h-6"/><path d="M26 22c0-3 2-4 2-7M34 22c0-3 2-4 2-7"/></svg>
-        <b>Cúrcuma</b><span>ukon</span>
-      </div>
-      <div class="ing">
-        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M14 34h32a16 16 0 0 1-32 0zM46 36h4a4 4 0 0 1 0 8M20 44h20"/><path d="M26 24c-2-3 2-5 0-8M38 24c-2-3 2-5 0-8"/></svg>
-        <b>Chá verde</b><span>sencha</span>
-      </div>
-      <div class="ing">
-        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M32 54V20"/><path d="M32 32c-4-6-13-6-17-3 2 8 11 10 17 6zM32 26c4-6 13-6 17-3-2 8-11 10-17 6zM32 44c-4-6-13-6-17-3 2 8 11 10 17 6z"/></svg>
-        <b>Erva-baleeira</b><span>バレイラ</span>
       </div>
     </div>
   </section>
@@ -402,8 +376,38 @@
           <p>O ritual de Aomori vai por outro caminho: em vez de só mascarar, ele mira a <strong>inflamação que está na origem da dor</strong>, por fora e por dentro.</p>
         </div>
         <div class="photo">
-          <img src="https://images.pexels.com/photos/8625537/pexels-photo-8625537.jpeg?auto=compress&cs=tinysrgb&w=1000&h=750&fit=crop" alt="Mão segurando o joelho, aliviando a dor na articulação" width="1000" height="750" loading="lazy">
+          <img src="img/r-apply.jpg" alt="Mãos aplicando a pomada dourada de gengibre e cúrcuma no joelho" width="1200" height="670" loading="lazy">
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INGREDIENT BAND -->
+  <section class="band rv" style="padding:clamp(40px,7vw,64px) 0">
+    <div class="wide" style="text-align:center;margin-bottom:32px">
+      <span class="eyebrow" style="color:var(--vermilion)">As ervas do ritual</span>
+      <h2>5 plantas que acalmam a inflamação</h2>
+    </div>
+    <div class="wide ingrow">
+      <div class="ing">
+        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M20 40c-6-4-8-12-3-18s14-6 19-1c4 4 5 8 11 10 5 2 8 7 5 13s-12 7-18 4c-5-3-8-3-13-1"/><path d="M30 22l4-7M40 26l6-5"/></svg>
+        <b>Gengibre</b><span>shoga</span>
+      </div>
+      <div class="ing">
+        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M32 52V20M32 20c-9 0-16-6-16-6s2 12 11 12M32 28c9 0 16-6 16-6s-2 12-11 12M32 36c-7 0-13-5-13-5s2 9 9 9"/></svg>
+        <b>Artemísia</b><span>yomogi</span>
+      </div>
+      <div class="ing">
+        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M18 30h28v6a14 14 0 0 1-28 0zM46 32h6a5 5 0 0 1 0 10h-6"/><path d="M26 22c0-3 2-4 2-7M34 22c0-3 2-4 2-7"/></svg>
+        <b>Cúrcuma</b><span>ukon</span>
+      </div>
+      <div class="ing">
+        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M14 34h32a16 16 0 0 1-32 0zM46 36h4a4 4 0 0 1 0 8M20 44h20"/><path d="M26 24c-2-3 2-5 0-8M38 24c-2-3 2-5 0-8"/></svg>
+        <b>Chá verde</b><span>sencha</span>
+      </div>
+      <div class="ing">
+        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M32 54V20"/><path d="M32 32c-4-6-13-6-17-3 2 8 11 10 17 6zM32 26c4-6 13-6 17-3-2 8-11 10-17 6zM32 44c-4-6-13-6-17-3 2 8 11 10 17 6z"/></svg>
+        <b>Erva-baleeira</b><span>バレイラ</span>
       </div>
     </div>
   </section>
@@ -427,9 +431,12 @@
   <section class="pain rv" style="background:var(--paper-2)">
     <div class="wrap">
       <div class="label">O detalhe que muda tudo</div>
-      <h2>Por que aquela “receita milagrosa” do WhatsApp nunca aliviou nada</h2>
-      <p>Talvez você já tenha tentado alguma e não sentiu nada. O motivo é simples: <strong>não é uma erva só. É a combinação certa, na proporção certa, preparada do jeito certo.</strong> Errar qualquer um desses três pontos é o que separa um preparo que alivia de um que não faz nada.</p>
-      <p>Foi exatamente essa combinação que foi traduzida do ritual de Aomori e <strong>adaptada com plantas que você acha em qualquer feira ou mercado no Brasil</strong>. Sem farmácia, sem ingrediente importado, sem pagar R$200 num pote.</p>
+      <h2>Por que a “receitinha do WhatsApp” nunca funcionou</h2>
+      <p>Não é uma erva só. <strong>É a combinação certa, na proporção certa, do jeito certo.</strong> Errar um desses três pontos é a diferença entre um preparo que alivia e um que não faz nada.</p>
+      <p>O ritual de Aomori acerta os três, com plantas que você acha em qualquer feira. Sem farmácia, sem importado.</p>
+      <div class="photo" style="aspect-ratio:16/9;margin-top:28px">
+        <img src="img/r-balm.jpg" alt="Pote de pomada caseira dourada cercado de gengibre, cúrcuma, chá verde e ervas frescas" width="1200" height="670" loading="lazy">
+      </div>
     </div>
   </section>
 
@@ -553,7 +560,10 @@
     <div class="wrap">
       <div class="label">De onde vem esse conhecimento</div>
       <h2>Não é modismo de internet. É tradição que sobreviveu gerações.</h2>
-      <p>O ritual tem origem em <strong>Aomori</strong>, no norte do Japão, e dialoga com a medicina tradicional japonesa (<strong>Kampo</strong>), a fitoterapia oficial usada no sistema de saúde de lá:</p>
+      <div class="photo" style="aspect-ratio:16/9;margin:6px 0 24px">
+        <img src="img/r-ofuro.jpg" alt="Banho de ofuro japonês de madeira com gengibre e ervas boiando na água quente" width="1200" height="670" loading="lazy">
+      </div>
+      <p>O ritual nasce em <strong>Aomori</strong>, no norte do Japão, e dialoga com a medicina tradicional japonesa (<strong>Kampo</strong>):</p>
       <ul>
         <li>O <strong>ofuro/onsen</strong> (banho de imersão) é tradição milenar pra circulação e dores.</li>
         <li>A <strong>artemísia (yomogi)</strong> aparece no chá, no banho de vapor e na moxabustão (okyu).</li>
