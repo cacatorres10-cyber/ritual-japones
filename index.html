@@ -81,6 +81,15 @@
   .cgrid div::before{content:"✓";flex-shrink:0;width:22px;height:22px;border-radius:50%;background:var(--vermilion);color:#fff;font-size:12px;font-weight:800;display:flex;align-items:center;justify-content:center}
   .cpay{max-width:560px;margin:30px auto 0;font-size:18px}
 
+  /* REVEAL (ritual story) */
+  .reveal{background:var(--paper)}
+  .reveal .eyebrow{color:var(--vermilion)}
+  .reveal .big{font-family:var(--serif);font-size:clamp(21px,3.4vw,28px);font-style:italic;color:var(--ink);line-height:1.3;margin:1.1em 0}
+  .reveal .herbs{list-style:none;margin:20px 0;display:grid;gap:12px}
+  .reveal .herbs li{position:relative;padding:15px 18px 15px 48px;background:var(--paper-2);border:1px solid var(--line);border-left:3px solid var(--sage);border-radius:12px;font-size:16.5px;color:var(--ink-soft)}
+  .reveal .herbs li::before{content:"🌿";position:absolute;left:16px;top:13px;font-size:18px}
+  .reveal .cta{margin-top:24px}
+
   /* 3 STEPS */
   .steps{background:var(--paper)}
   .steps .intro{text-align:center;margin-bottom:36px}
@@ -329,16 +338,14 @@
   <section class="pain rv">
     <div class="wrap">
       <h2>Cansou de viver com medo do próximo movimento que vai doer?</h2>
-      <p>Você não fala em voz alta, mas a verdade é essa: a dor foi, aos poucos, tomando conta da sua vida. Hoje você…</p>
+      <p>Sem perceber, a dor foi decidindo o que você pode fazer. Hoje você…</p>
       <ul>
-        <li>Pensa duas vezes antes de pegar o neto no colo, com medo de não aguentar o peso</li>
-        <li>Desiste do passeio, da viagem, da caminhada, porque não sabe como o corpo vai reagir</li>
-        <li>Acorda quebrado mesmo tendo dormido, porque a dor não deixa o sono ser inteiro</li>
-        <li>Já torrou dinheiro em pomada cara que alivia por umas horas, e a dor volta igualzinha</li>
-        <li>Sente o corpo travar quando esfria e leva longos minutos pra destravar de manhã</li>
+        <li>Pensa duas vezes antes de pegar o neto no colo, com medo de não aguentar</li>
+        <li>Desiste do passeio e da viagem, sem saber como o corpo vai reagir</li>
+        <li>Acorda quebrado mesmo tendo dormido, e trava todo quando esfria</li>
       </ul>
-      <p class="fear">E no fundo mora um medo que quase ninguém tem coragem de dizer: <em>“e se piorar? E se um dia eu não conseguir mais fazer as coisas sozinho?”</em></p>
-      <p style="margin-top:26px">A boa notícia? Dá pra virar esse jogo em casa, de um jeito simples e natural, com as suas próprias mãos.</p>
+      <p class="fear">E no fundo mora um medo que quase ninguém diz em voz alta: <em>“e se piorar?”</em></p>
+      <p style="margin-top:22px">A boa notícia? Dá pra virar esse jogo em casa, de um jeito simples e natural.</p>
       <div class="photo" style="aspect-ratio:4/3;margin-top:30px">
         <img src="https://images.pexels.com/photos/5480235/pexels-photo-5480235.jpeg?auto=compress&cs=tinysrgb&w=1000&h=750&fit=crop" alt="Ervas sendo maceradas em um almofariz de pedra sobre madeira, no preparo do ritual" width="1000" height="750" loading="lazy">
       </div>
@@ -364,7 +371,27 @@
         <div>Osteoporose</div>
         <div>Dor crônica</div>
       </div>
-      <p class="cpay">Marcou uma que seja? Então o ritual de Aomori foi feito pra te dar <strong>alívio natural todos os dias</strong>, em casa, sem depender de pomada cara.</p>
+      <p class="cpay">Marcou uma que seja? Então fica comigo: o que as curandeiras de Aomori fazem na cozinha pode ser exatamente o que faltava.</p>
+    </div>
+  </section>
+
+  <!-- REVEAL: ritual story -->
+  <section class="reveal rv">
+    <div class="wrap">
+      <span class="eyebrow">O segredo de Aomori</span>
+      <h2>Hoje você vai descobrir o que as curandeiras fazem na cozinha</h2>
+      <p>No norte gelado do Japão, numa região chamada <strong>Aomori</strong>, as curandeiras passam de mãe pra filha um ritual de séculos pra acalmar a dor nas juntas.</p>
+      <p class="big">E não é remédio. É comida e planta.</p>
+      <p>Elas misturam <strong>quatro ervas numa pomada</strong> que aplicam em 15 segundos no ponto da dor:</p>
+      <ul class="herbs">
+        <li><strong>Gengibre (shoga)</strong> e <strong>cúrcuma (ukon)</strong>: dois anti-inflamatórios naturais conhecidos há séculos.</li>
+        <li><strong>Artemísia (yomogi)</strong>: a “erva da dor” do Japão.</li>
+        <li>E aqui entra o toque brasileiro: a <strong>erva-baleeira</strong>, nosso anti-inflamatório nativo, que fecha a fórmula.</li>
+      </ul>
+      <p>Depois, tomam um <strong>chá quente</strong> que combate a inflamação por dentro. Mergulham num <strong>banho morno de ervas (o ofuro)</strong> que solta a junta travada. E pressionam <strong>pontos certos do corpo (o shiatsu)</strong> que aliviam a tensão na hora.</p>
+      <p class="big">Quatro ervas. Quatro frentes. Um ritual.</p>
+      <p>E quando você entender <em>por que</em> ele funciona, vai bater aquela ficha: <em>“então era isso que faltava.”</em></p>
+      <a class="cta" href="#oferta">Quero aprender o ritual completo</a>
     </div>
   </section>
 
@@ -411,21 +438,6 @@
       <div class="ing">
         <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M32 54V20"/><path d="M32 32c-4-6-13-6-17-3 2 8 11 10 17 6zM32 26c4-6 13-6 17-3-2 8-11 10-17 6zM32 44c-4-6-13-6-17-3 2 8 11 10 17 6z"/></svg>
         <b>Erva-baleeira</b><span>バレイラ</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- 3 STEPS -->
-  <section class="steps rv">
-    <div class="wide">
-      <div class="intro">
-        <span class="eyebrow">Como o ritual age na sua dor</span>
-        <h2>3 frentes contra a dor, ao mesmo tempo</h2>
-      </div>
-      <div class="sgrid">
-        <div class="step"><div class="si">🌿</div><b>1. Acalma a inflamação</b><p>Pomadas de gengibre e cúrcuma direto no ponto da dor, com ervas de ação anti-inflamatória conhecida há séculos.</p></div>
-        <div class="step"><div class="si">🔥</div><b>2. Solta a rigidez</b><p>Calor do ofuro, compressas e automassagem shiatsu pra desinchar e destravar a articulação travada.</p></div>
-        <div class="step"><div class="si">🍵</div><b>3. Mantém o alívio</b><p>Chás e o plano de 30 dias pra manter a inflamação baixa e a dor não voltar com tudo na primeira friagem.</p></div>
       </div>
     </div>
   </section>
