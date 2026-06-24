@@ -126,6 +126,11 @@
   .mchips{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:52px}
   .mchip{display:inline-flex;align-items:center;gap:7px;font-size:13.5px;font-weight:600;color:#E4DAC9;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:999px;padding:8px 15px}
   .mchip b{color:#fff}.mchip .star{color:#F4B740}
+  .recv-photo{max-width:880px;margin:0 auto 34px;border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,.14);box-shadow:0 50px 90px -45px rgba(0,0,0,.75)}
+  .recv-photo img{width:100%;display:block}
+  .recv{list-style:none;max-width:720px;margin:0 auto 44px;display:grid;grid-template-columns:1fr 1fr;gap:13px 28px;text-align:left}
+  .recv li{position:relative;padding-left:33px;color:#E4DAC9;font-weight:500;font-size:16px;line-height:1.35}
+  .recv li::before{content:"✓";position:absolute;left:0;top:1px;width:22px;height:22px;border-radius:50%;background:var(--vermilion);color:#fff;font-size:12px;font-weight:800;display:flex;align-items:center;justify-content:center}
 
   .device{position:relative;max-width:960px;margin:0 auto;perspective:2000px}
   .float{position:absolute;z-index:4;font-size:12.5px;font-weight:600;background:rgba(255,255,255,.97);color:var(--ink);border-radius:13px;padding:11px 15px;box-shadow:0 22px 46px -18px rgba(0,0,0,.65);animation:floaty 4.5s ease-in-out infinite}
@@ -302,6 +307,7 @@
     .cards,.tgrid,.sgrid{grid-template-columns:1fr}
     .cgrid{grid-template-columns:1fr 1fr;gap:9px}
     .cgrid div{font-size:14px;padding:12px}
+    .recv{grid-template-columns:1fr;gap:11px}
     .phone{display:none}
     .brow .val{display:none}
     .sticky{display:flex}
@@ -400,8 +406,19 @@
   <section class="mockup rv">
     <div class="wide">
       <span class="eyebrow">O que você recebe hoje</span>
-      <h2>Esqueça o PDF perdido no e-mail. Aqui é o ritual inteiro mastigado pra você.</h2>
-      <p class="intro">Tudo na palma da sua mão, no celular ou no computador. Você entra, aperta o play e faz junto, passo a passo, sem complicação nenhuma.</p>
+      <h2>Você recebe o ritual completo, passo a passo, pra fazer em casa</h2>
+      <p class="intro">Nada de teoria solta. É o passo a passo, em vídeo, de cada parte do ritual, pra você seguir do começo ao fim sem dúvida nenhuma.</p>
+      <div class="recv-photo"><img src="img/r-kit.jpg" alt="As ervas, chás, pomadas caseiras, o almofariz e o caderno do plano do ritual sobre uma mesa de madeira" width="1200" height="670" loading="lazy"></div>
+      <ul class="recv">
+        <li>Passo a passo do ritual, em vídeo</li>
+        <li>Pomadas caseiras (joelho, coluna, mãos)</li>
+        <li>Chás e bebidas anti-inflamatórias</li>
+        <li>Banhos de ofuro e compressas</li>
+        <li>Automassagem e exercícios que destravam</li>
+        <li>Alimentação anti-inflamatória</li>
+        <li>Plano de 90 dias, guiado dia a dia</li>
+        <li>+ 4 bônus exclusivos</li>
+      </ul>
       <div class="mchips">
         <span class="mchip">🔓 <b>Acesso vitalício</b></span>
         <span class="mchip"><span class="star">★</span> <b>4,9</b> de avaliação</span>
@@ -420,7 +437,7 @@
               <nav>
                 <a class="on"><span class="ni">▦</span> Início</a>
                 <a><span class="ni">▶</span> Meus rituais</a>
-                <a><span class="ni">📅</span> Plano 30 dias</a>
+                <a><span class="ni">📅</span> Plano 90 dias</a>
                 <a><span class="ni">🎁</span> Bônus</a>
                 <a><span class="ni">👥</span> Comunidade</a>
               </nav>
@@ -441,7 +458,7 @@
                 <div class="mtile"><img class="thumb" src="https://images.pexels.com/photos/6724402/pexels-photo-6724402.jpeg?auto=compress&cs=tinysrgb&w=400&h=240&fit=crop" alt="" loading="lazy"><div class="ti"><b>Ritual do Ofuro</b><span>4 aulas · 22 min</span><div class="bar"><i style="width:25%"></i></div></div></div>
                 <div class="mtile"><img class="thumb" src="https://images.pexels.com/photos/4599424/pexels-photo-4599424.jpeg?auto=compress&cs=tinysrgb&w=400&h=240&fit=crop" alt="" loading="lazy"><div class="ti"><b>Shiatsu + Along.</b><span>5 aulas · 31 min</span><div class="bar"><i style="width:0%"></i></div></div></div>
                 <div class="mtile"><img class="thumb" src="https://images.pexels.com/photos/4871156/pexels-photo-4871156.jpeg?auto=compress&cs=tinysrgb&w=400&h=240&fit=crop" alt="" loading="lazy"><div class="ti"><b>Alimentação</b><span>4 aulas · 19 min</span><div class="bar"><i style="width:0%"></i></div></div></div>
-                <div class="mtile"><img class="thumb" src="https://images.pexels.com/photos/161556/ginger-plant-asia-rhizome-161556.jpeg?auto=compress&cs=tinysrgb&w=400&h=240&fit=crop" alt="" loading="lazy"><div class="ti"><b>Plano de 30 Dias</b><span>30 passos diários</span><div class="bar"><i style="width:10%"></i></div></div></div>
+                <div class="mtile"><img class="thumb" src="https://images.pexels.com/photos/161556/ginger-plant-asia-rhizome-161556.jpeg?auto=compress&cs=tinysrgb&w=400&h=240&fit=crop" alt="" loading="lazy"><div class="ti"><b>Plano de 90 Dias</b><span>90 dias guiados</span><div class="bar"><i style="width:10%"></i></div></div></div>
               </div>
             </div>
           </div>
@@ -521,7 +538,7 @@
           <li><span>Ritual do Ofuro (banhos)</span><span>R$47</span></li>
           <li><span>Automassagem Shiatsu + Alongamentos</span><span>R$47</span></li>
           <li><span>Alimentação Japonesa</span><span>R$47</span></li>
-          <li><span>Plano de 30 Dias</span><span>R$67</span></li>
+          <li><span>Plano de 90 Dias</span><span>R$67</span></li>
           <li><span>4 Bônus</span><span>R$178</span></li>
           <li class="total"><span>Valor total</span><span class="strike">R$530</span></li>
         </ul>
@@ -559,11 +576,11 @@
   <section class="rv">
     <div class="wrap">
       <h2 style="text-align:center;margin-bottom:24px">Perguntas frequentes</h2>
-      <details><summary>É um e-book?</summary><p>É mais que isso: 6 módulos em aulas práticas (pomadas, chás, ofuro, shiatsu, alimentação e plano de 30 dias) e 4 bônus, com acesso digital no celular ou no computador.</p></details>
+      <details><summary>É um e-book?</summary><p>É mais que isso: 6 módulos em aulas práticas (pomadas, chás, ofuro, shiatsu, alimentação e plano de 90 dias) e 4 bônus, com acesso digital no celular ou no computador.</p></details>
       <details><summary>Não entendo nada de ervas, vou conseguir?</summary><p>Sim. É passo a passo, com medida exata. Se você sabe fazer um chá, você consegue.</p></details>
       <details><summary>E se eu não achar as ervas?</summary><p>O Bônus 1 (Guia de Substituição) mostra onde achar cada uma e o que usar no lugar quando faltar.</p></details>
       <details><summary>Funciona pra qual tipo de dor?</summary><p>Dores articulares e inflamatórias (joelho, coluna, mãos, pescoço, ombros). Não é tratamento de doença, é alívio natural complementar.</p></details>
-      <details><summary>Quanto tempo até sentir diferença?</summary><p>Varia de pessoa pra pessoa. Alguns relatam alívio nos primeiros dias; por isso existe o Plano de 30 Dias.</p></details>
+      <details><summary>Quanto tempo até sentir diferença?</summary><p>Varia de pessoa pra pessoa. Alguns relatam alívio nos primeiros dias; por isso existe o Plano de 90 Dias.</p></details>
       <details><summary>É seguro?</summary><p>São preparos de uso tópico e alimentar, com ingredientes naturais. Ainda assim, é complementar e não substitui seu acompanhamento médico.</p></details>
       <details><summary>E se eu não gostar?</summary><p>Garantia de 7 dias e devolução de 100%. O risco é todo nosso.</p></details>
     </div>
