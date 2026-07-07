@@ -672,6 +672,11 @@ src="https://www.facebook.com/tr?id=2198702257648045&ev=PageView&noscript=1"
   const sticky=document.getElementById('sticky'),hero=document.querySelector('.hero'),offer=document.getElementById('oferta');
   new IntersectionObserver((es)=>{es.forEach(e=>{if(e.target===hero&&!e.isIntersecting)sticky.classList.add('show');});},{threshold:0}).observe(hero);
   new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting)sticky.classList.remove('show');});},{threshold:.3}).observe(offer);
+
+  // Meta Pixel: dispara InitiateCheckout ao clicar em qualquer botão de compra
+  document.querySelectorAll('a.cta').forEach(function(el){
+    el.addEventListener('click',function(){ if(window.fbq){ fbq('track','InitiateCheckout'); } });
+  });
 </script>
 </body>
 </html>
