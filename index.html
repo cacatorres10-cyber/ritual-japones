@@ -410,7 +410,7 @@ src="https://www.facebook.com/tr?id=2198702257648045&ev=PageView&noscript=1"
           <span class="eyebrow">Para quem já tentou de tudo contra a dor nas juntas</span>
           <h1>O ritual japonês de 15 segundos que ativa as <span class="hl">4 chaves da junta</span> e alivia a dor sem remédio</h1>
           <p class="lead">Um segredo passado de mãe pra filha pelas curandeiras de Aomori, que só funciona quando <strong>quatro ativações acontecem na ordem certa</strong>.</p>
-          <a class="cta" href="https://pay.cakto.com.br/3a9oqvb_966889">👉 Quero aprender o ritual completo de Aomori</a>
+          <a class="cta" href="#oferta">👉 Quero aprender o ritual completo de Aomori</a>
           <div class="cta-note"><span>✓ Acesso imediato</span>·<span>✓ Passo a passo em vídeo</span>·<span>✓ Garantia de 7 dias</span></div>
         </div>
         <div class="photo rv in">
@@ -464,7 +464,7 @@ src="https://www.facebook.com/tr?id=2198702257648045&ev=PageView&noscript=1"
       <p>Separadas, essas etapas fazem pouco. <strong>Na sequência correta, elas destravam a junta.</strong></p>
       <p class="big">É por isso que o ritual leva apenas 15 segundos.</p>
       <p>Mais tempo dispersa o efeito. Menos tempo não ativa o corpo.</p>
-      <a class="cta" href="https://pay.cakto.com.br/3a9oqvb_966889">👉 Quero aprender o ritual completo de Aomori</a>
+      <a class="cta" href="#oferta">👉 Quero aprender o ritual completo de Aomori</a>
     </div>
   </section>
 
@@ -633,7 +633,7 @@ src="https://www.facebook.com/tr?id=2198702257648045&ev=PageView&noscript=1"
     <div class="wrap">
       <h2>Pense rápido: mais um dia de dor, ou R$27?</h2>
       <p style="color:var(--ink-soft);max-width:560px;margin:0 auto 30px">R$27 com os 4 bônus é o preço de lançamento. Conforme o conteúdo cresce, o valor sobe. Amanhã a dor vai estar igual; a única diferença é se você começou hoje ou ficou parado mais um dia.</p>
-      <a class="cta" href="https://pay.cakto.com.br/3a9oqvb_966889">Quero o ritual completo por R$27</a>
+      <a class="cta" href="#oferta">Quero o ritual completo por R$27</a>
     </div>
   </section>
 
@@ -660,7 +660,7 @@ src="https://www.facebook.com/tr?id=2198702257648045&ev=PageView&noscript=1"
 
 <div class="sticky" id="sticky">
   <div class="pp">R$27<small>de R$677 · hoje</small></div>
-  <a class="cta" href="https://pay.cakto.com.br/3a9oqvb_966889">Quero o ritual</a>
+  <a class="cta" href="#oferta">Quero o ritual</a>
 </div>
 
 <script>
@@ -673,8 +673,8 @@ src="https://www.facebook.com/tr?id=2198702257648045&ev=PageView&noscript=1"
   new IntersectionObserver((es)=>{es.forEach(e=>{if(e.target===hero&&!e.isIntersecting)sticky.classList.add('show');});},{threshold:0}).observe(hero);
   new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting)sticky.classList.remove('show');});},{threshold:.3}).observe(offer);
 
-  // Meta Pixel: dispara InitiateCheckout ao clicar em qualquer botão de compra
-  document.querySelectorAll('a.cta').forEach(function(el){
+  // Meta Pixel: dispara InitiateCheckout só no botão que vai pro checkout (Cakto)
+  document.querySelectorAll('a[href*="pay.cakto"]').forEach(function(el){
     el.addEventListener('click',function(){ if(window.fbq){ fbq('track','InitiateCheckout'); } });
   });
 </script>
